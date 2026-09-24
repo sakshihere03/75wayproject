@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DRIP — Streetwear Store</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="logo" onclick="go('shop')">DR<b>IP</b></div><nav id="nav"></nav><button class="pri" onclick="openCart()">🛒 Cart (<span id="cc">0</span>)</button></header>
+<main id="main"></main>
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeAll()"><div class="panel" id="cart"></div></div>
+<div class="modal" id="modal" onclick="if(event.target===this&&!busy)closeAll()"><div class="box" id="box"></div></div>
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script></body></html>
